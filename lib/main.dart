@@ -1,5 +1,7 @@
+import 'package:doctor/pages/Login_page.dart';
 import 'package:doctor/pages/caruosel_page.dart';
 import 'package:doctor/pages/covid_19page.dart';
+import 'package:doctor/pages/form.dart';
 import 'package:doctor/pages/home_page.dart';
 import 'package:doctor/pages/navbuttom.dart';
 import 'package:doctor/pages/splash_Page.dart';

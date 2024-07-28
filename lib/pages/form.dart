@@ -1,3 +1,6 @@
+
+import 'package:doctor/data/user_data.dart';
+import 'package:doctor/model_class/register_model.dart';
 import 'package:flutter/material.dart';
 
 class Registration extends StatefulWidget {
@@ -41,9 +44,12 @@ class _RegistrationState extends State<Registration> {
                     label: Text("First Name"), hintText: "First Name",
                     // hintStyle: TextStyle(color: Colors.purple)
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
-                    // suffix: Icon(Icons.search),                    // suffixIcon: Icon(Icons.abc),
-                    // prefix: Icon(Icons.abc),                    // prefixIcon: Icon(Icons.abc)
+                        borderRadius: BorderRadius.all(Radius.circular(20))
+                    ),
+                    // suffix: Icon(Icons.search),
+                    // suffixIcon: Icon(Icons.abc),
+                    // prefix: Icon(Icons.abc),
+                    // prefixIcon: Icon(Icons.abc)
                   ),
                   validator: (value) {
                     if (value!.isEmpty) {
@@ -70,6 +76,7 @@ class _RegistrationState extends State<Registration> {
                     if (value!.isEmpty) {
                       // return "Please enter last name";
                     }
+                    return null;
                   },
                 ),
                 SizedBox(
@@ -163,11 +170,17 @@ class _RegistrationState extends State<Registration> {
                     }
                   },
                 ),
+                SizedBox(
+                  height: 20,
+                ),
                 MaterialButton(
+                  height: 70,
                   minWidth: MediaQuery.of(context).size.width * 0.8,
                   color: Colors.blue,
                   onPressed: () {
-                    _formKey.currentState!.validate();
+                    if(_formKey.currentState!.validate()){
+                      // user.add(userModel(firstName: _firstName.text.toString()));
+                    };
                   },
                   child: Text("Register Now!"),
                 )

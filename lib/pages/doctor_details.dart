@@ -194,7 +194,7 @@ class DoctorDetails extends StatelessWidget {
                     minWidth: MediaQuery.of(context).size.width*0.8,
                       height:MediaQuery.of(context).size.height*0.09,
                       onPressed: (){},
-                    child: Text("Make an Appoinment ",style: myStyle(22,Colors.white,FontWeight.bold),) ,
+                    child: Text("Make an Appointment ",style: myStyle(22,Colors.white,FontWeight.bold),) ,
                     
                   ),
         
