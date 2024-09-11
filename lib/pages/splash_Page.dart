@@ -30,9 +30,10 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+
+              Lottie.asset(height: 100,width: 100,'assets/animation/HL.json'),
               Lottie.asset(height: 100,width: 100,'assets/animation/loader.json'),
               SizedBox(height: 10,),
-              Lottie.asset(height: 100,width: 100,'assets/animation/HL.json'),
               // Lottie.asset(height: 100,width: 100,'assets/animation/Health.json'),
             ],
           ),

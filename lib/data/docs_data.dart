@@ -138,7 +138,6 @@ List<List>allMedicine=[
         ProductDetails: '',
         price:530),
   ],
-
   [
     MedicineModel
       (

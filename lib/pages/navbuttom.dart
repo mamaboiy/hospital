@@ -46,8 +46,6 @@ class _buttomnavbarState extends State<buttomnavbar> {
         },
         items: allItems,
       ),
-
-
       // bottomNavigationBar: BottomNavigationBar(
       //   selectedItemColor: Colors.blue,
       //   backgroundColor: Colors.blue.shade50,

@@ -35,6 +35,7 @@ class HospitalPage extends StatelessWidget {
           Icon(Icons.more_vert),
         ],
       ),
+
       body: SingleChildScrollView(
         child: Column(
           children: [
